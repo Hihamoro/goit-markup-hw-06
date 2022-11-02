@@ -735,6 +735,10 @@ p {
     background: rgba(0, 0, 0, 0);
 }
 
+.foot-form input:focus {
+    outline: none;
+}
+
 .sign-up::placeholder {
     font-size: 16px;
     line-height: 1.25;
@@ -901,6 +905,7 @@ p {
 .element-form input:hover,
 .element-form input:focus {
     border: 1px solid var(--accent-color);
+    outline: none;
 }
 
 .element-form input:hover+.icon-modal,
@@ -936,6 +941,7 @@ p {
 .coment-form textarea:hover,
 .coment-form textarea:focus {
     border: 1px solid var(--accent-color);
+    outline: none;
 }
 
 .coment-form label {
@@ -985,7 +991,7 @@ p {
     height: 15px;
     background-color: var(--button-color);
     border: 2px solid var(--primary-text-color);
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 .checkbox:checked+.checkbox-icon {
