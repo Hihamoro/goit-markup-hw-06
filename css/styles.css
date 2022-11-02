@@ -365,12 +365,10 @@ p {
     justify-content: center;
 }
 
-.social-flex .item {
+.social-flex .social {
     display: flex;
     width: 44px;
     height: 44px;
-    margin-right: 10px;
-    margin-bottom: 30px;
     justify-content: center;
     align-items: center;
     background-color: var(--button-color);
@@ -379,23 +377,32 @@ p {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+.social-flex .item-social {
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+
+.social-flex .item-social:last-child {
+    margin-right: 0;
+}
+
 .social-flex .item:last-child {
     margin-right: 0;
 }
 
-
-.social-flex .item:hover,
-.social-flex .item:focus {
+.social-flex .social:hover,
+.social-flex .social:focus {
     cursor: pointer;
     background-color: var(--accent-color);
 }
 
-.social-flex .item .icon {
+.social-flex .social .icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-flex .item:hover .icon,
-.social-flex .item:focus .icon {
+.social-flex .social:hover .icon,
+.social-flex .social:focus .icon {
     fill: var(--button-color);
 }
 
@@ -407,7 +414,7 @@ p {
     display: flex;
 }
 
-.client-flex .item {
+.client-flex .client {
     display: flex;
     height: 92px;
     flex-basis: calc((100% - 30px * 5)/6);
@@ -419,23 +426,22 @@ p {
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-flex .item:last-child {
+.client-flex .client:last-child {
     margin-right: 0;
 }
 
-.client-flex .item:hover,
-.client-flex .item:focus {
+.client-flex .client:hover,
+.client-flex .client:focus {
     cursor: pointer;
     border: 1px solid var(--accent-color);
 }
 
-.client-flex .item .icon {
+.client-flex .client .icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.client-flex .item:hover .icon,
-.client-flex .item:focus .icon {
+.client-flex .client:hover .icon,
+.client-flex .client:focus .icon {
     fill: var(--accent-color);
 }
 
@@ -540,13 +546,13 @@ p {
     transform: translateY(0);
 }
 
-.main-flex .item:hover,
-.main-flex .item:focus {
+.main-flex .example:hover,
+.main-flex .example:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.main-flex .item:hover .information,
-.main-flex .item:focus .information {
+.main-flex .example:hover .information,
+.main-flex .example:focus .information {
     opacity: 1;
     transform: translateY(-100%);
 }
@@ -673,11 +679,10 @@ p {
     justify-content: center;
 }
 
-.foot-social .item {
+.foot-social .network {
     display: flex;
     width: 44px;
     height: 44px;
-    margin-right: 10px;
     justify-content: center;
     fill: var(--button-color);
     align-items: center;
@@ -686,23 +691,25 @@ p {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.foot-social .item:last-child {
+.foot-social .item-social {
+    margin-right: 10px;
+}
+
+.foot-social .item-social:last-child {
     margin-right: 0;
 }
 
-.foot-social .item:hover,
-.foot-social .item:focus {
+.foot-social .network:hover,
+.foot-social .network:focus {
     cursor: pointer;
     background-color: var(--accent-color);
 }
 
-.foot-social .item .icon {
+.foot-social .network .icon {
+    display: flex;
     fill: var(--button-color)
 }
 
-.social .icon {
-    display: flex;
-}
 
 .sign-up {
     max-width: 570px;
